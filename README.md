@@ -44,19 +44,16 @@ Clone este repositório: https://github.com/orodrigobarbosa/projeto-devops
 **Como já tem o arquivo .env,  precisa apenas executar oDocker Compose:
 docker-compose up --build -d
 
-🖥️ Acessos da Aplicação
-Frontend: http://localhost:3000
+🖥️ Acessos da Aplicação rodando com Docker Compose:
 
-Backend (Swagger ou API REST): http://localhost:8080/api/tarefas
+Frontend (interface web):
+👉 http://localhost:3000
 
-Banco de Dados: localhost:5432 (PostgreSQL)
+Backend (API REST):
+👉 http://localhost:8080/api/tarefas
 
-
-📝 Estrutura dos containers:
-Serviço	      Descrição	                              Porta Local
-PostgreSQL	 Banco de dados	                             5432
-Backend	    API REST em Spring Boot  	                   8080
-Frontend	  Interface Web com React e Vite	             3000
+Banco de dados:
+👉 Não há necessidade de acessar diretamente, mas está exposto na porta 5432 caso precise.
 
 
 Para parar a aplicação e remover os volumes do banco de dados, execute:
