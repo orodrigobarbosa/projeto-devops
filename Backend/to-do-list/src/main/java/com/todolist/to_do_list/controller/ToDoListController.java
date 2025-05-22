@@ -8,10 +8,10 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-@RestController
-@RequestMapping("/api/tarefas")
-@CrossOrigin(origins = "*")  // Libera o CORS para facilitar cesso do frontend
-public class ToDoListController {
+    @RestController
+    @RequestMapping("/api/tarefas")
+    @CrossOrigin(origins = "*")  // Libera o CORS para facilitar cesso do frontend
+    public class ToDoListController {
 
     @Autowired
     private ToDoListService toDoListService;
@@ -21,12 +21,12 @@ public class ToDoListController {
     public ResponseEntity<List<ToDoList>> listarTodas() {
         return ResponseEntity.ok(toDoListService.listarTodas());
     }
-
+/*
     // Buscar tarefa por ID
     @GetMapping("/{id}")
     public ResponseEntity<ToDoList> buscarPorId(@PathVariable Long id) {
         return ResponseEntity.ok(toDoListService.buscarPorId(id));
-    }
+    }*/
 
     // Criar nova tarefa
     @PostMapping
