@@ -44,9 +44,11 @@ Clone este repositório: https://github.com/orodrigobarbosa/projeto-devops
 **Como já tem o arquivo .env,  precisa apenas executar oDocker Compose:
 docker-compose up --build -d
 
-Para Acessar a aplicação:
+🖥️ Acessos da Aplicação
 Frontend: http://localhost:3000
+
 Backend (Swagger ou API REST): http://localhost:8080/api/tarefas
+
 Banco de Dados: localhost:5432 (PostgreSQL)
 
 
